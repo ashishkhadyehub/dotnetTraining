@@ -159,3 +159,23 @@ greeting("Test");
 Method_Overloading obj = new Method_Overloading();
 Console.WriteLine(obj.PlusMethod(2,8));
 Console.WriteLine(obj.PlusMethod(20.90,89.90));
+
+//object initialization
+Car mycar = new Car();
+
+Console.WriteLine(mycar.Color);
+Console.WriteLine(mycar.maxSpeed);
+Console.WriteLine(mycar.model);
+mycar.fullThrottle();
+
+Car1 mycar1= new Car1();
+mycar1.honk();
+Console.WriteLine(mycar1.brand + "-" + mycar1.modelName);
+
+Animal myanimal = new Animal();
+Dog mydog = new Dog();
+Pig pig = new Pig();
+
+myanimal.animalSound();
+mydog.animalSound();
+pig.animalSound();

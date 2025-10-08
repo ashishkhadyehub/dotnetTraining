@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    //derived class
-    public class Car1:Vehicle
+    class Tiger : Animal1
     {
-        
-        public string modelName = "Mustang";  // Car field
+        public override void animalSound()
+        {
+            Console.WriteLine("Playing animal sound");
+        }
     }
 }

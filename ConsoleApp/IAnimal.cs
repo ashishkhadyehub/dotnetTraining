@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    //derived class
-    public class Car1:Vehicle
+    interface IAnimal
     {
         
-        public string modelName = "Mustang";  // Car field
+        void animalSound(); // interface method (does not have a body)
     }
 }

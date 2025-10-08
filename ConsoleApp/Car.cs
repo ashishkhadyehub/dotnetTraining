@@ -9,6 +9,7 @@ namespace ConsoleApp
     public class Car
     {
         //ctor- to create constructor
+       
         public string Name { get; set; }
 
         public int VehicleId { get; set; }

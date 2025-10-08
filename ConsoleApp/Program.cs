@@ -16,6 +16,7 @@
 
 
 using ConsoleApp;
+using System.Reflection.Emit;
 
 int myInt = 9;
 double myDouble = myInt;
@@ -179,3 +180,29 @@ Pig pig = new Pig();
 myanimal.animalSound();
 mydog.animalSound();
 pig.animalSound();
+
+Tiger tiger = new Tiger();
+tiger.animalSound();
+tiger.sleep();
+
+Lion lion = new Lion();
+lion.animalSound();
+
+Levels myVar = Levels.Medium;
+Console.WriteLine($"{myVar}= " + (int)myVar);
+
+string writeText = "Hello Students!";  // Create a text string
+File.WriteAllText("demo.txt", writeText);  // Create a file and write the contents of writeText to it
+
+string readText = File.ReadAllText("demo.txt"); // Read the contents of the file
+Console.WriteLine(readText); // Output the content
+
+try
+{
+    int[] myNumbers1 = { 1, 2, 3 };
+    Console.WriteLine(myNumbers1[2]);
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    //derived class
-    public class Car1:Vehicle
+    enum Levels
     {
-        
-        public string modelName = "Mustang";  // Car field
+        Low=20,
+        Medium=30,
+        Highe=50
     }
 }

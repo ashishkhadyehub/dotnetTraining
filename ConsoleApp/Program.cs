@@ -16,6 +16,7 @@
 
 
 using ConsoleApp;
+using System.Collections;
 using System.Reflection.Emit;
 
 int myInt = 9;
@@ -188,6 +189,7 @@ tiger.sleep();
 Lion lion = new Lion();
 lion.animalSound();
 
+
 Levels myVar = Levels.Medium;
 Console.WriteLine($"{myVar}= " + (int)myVar);
 
@@ -206,3 +208,46 @@ catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
+
+//value type
+int i1 = 1;
+
+//reference type
+object o = i1; // boxing 
+int j = (int)o; // unboxing  
+
+
+Console.WriteLine(Vehicle.AreEqual<double>(10.69,10.69));
+
+
+ArrayList al = new ArrayList();
+string str = "test";
+int x = 7;
+DateTime d = DateTime.Parse("8-oct-1985");
+al.Add(str);
+al.Add(x);
+al.Add(d);
+
+foreach (object o1 in al)
+{
+    Console.WriteLine(o1);
+
+}
+
+List<int> lst = new List<int>();
+lst.Add(100);
+lst.Add(200);
+lst.Add(300);
+lst.Add(400);
+foreach (int item in lst)
+{
+    Console.WriteLine(item);
+
+}
+
+Vehicle v1 = new Vehicle();
+v1.del("Testing delegate");
+
+
+
+

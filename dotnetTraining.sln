@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{3FE6D954-FFF2-4F1B-B179-67E019155C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp", "WebFormsApp\WebFormsApp.csproj", "{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3FE6D954-FFF2-4F1B-B179-67E019155C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FE6D954-FFF2-4F1B-B179-67E019155C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FE6D954-FFF2-4F1B-B179-67E019155C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

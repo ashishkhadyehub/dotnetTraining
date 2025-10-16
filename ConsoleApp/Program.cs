@@ -250,4 +250,48 @@ v1.del("Testing delegate");
 
 
 
+//test question answers
+
+
+int number = 1234;
+int reverse = 0;
+
+while (number > 0)
+{
+    int digit = number % 10;      // get last digit
+    Console.WriteLine(digit);
+    reverse = (reverse * 10) + digit; // add digit to reverse number
+    Console.WriteLine(reverse);
+    number = number / 10;         // remove last digit 123.4
+    Console.WriteLine("--------");
+}
+
+Console.WriteLine("Reversed Number: " + reverse);
+
+int[] numbers = { 10, 20, 5, 15, 30 };
+int max = numbers[0];
+int index = 0;
+
+for (int f = 1; f < numbers.Length; f++)
+{
+    if (numbers[f] > max)
+    {
+        max = numbers[f];
+        index = f;
+    }
+}
+
+Console.WriteLine("Maximum Number: " + max);
+Console.WriteLine("Position (Index): " + index);
+
+Console.Write("Enter a string: ");
+string str1 = Console.ReadLine();
+
+foreach (char ch in str1)
+{
+    Console.WriteLine(ch);
+}
+
+
+
 

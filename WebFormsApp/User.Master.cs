@@ -4,18 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Xml.Linq;
 
 namespace WebFormsApp
 {
-    public partial class Index : System.Web.UI.Page
+    public partial class User : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtName.Text = "Hello World";
 
         }
-
-       
     }
 }

@@ -12,11 +12,13 @@ namespace WebFormsApp
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 bindddl();
             }
-            
+
+
+
         }
 
         protected void btnrefresh_Click(object sender, EventArgs e)

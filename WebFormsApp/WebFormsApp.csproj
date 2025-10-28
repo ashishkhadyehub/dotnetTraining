@@ -73,7 +73,11 @@
     <Content Include="JavaScript.js" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Session1.aspx" />
+    <Content Include="Session2.aspx" />
+    <Content Include="SessionExample.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="ViewStateExample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,12 +110,40 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Session1.aspx.cs">
+      <DependentUpon>Session1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session1.aspx.designer.cs">
+      <DependentUpon>Session1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Session2.aspx.cs">
+      <DependentUpon>Session2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session2.aspx.designer.cs">
+      <DependentUpon>Session2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionExample.aspx.cs">
+      <DependentUpon>SessionExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionExample.aspx.designer.cs">
+      <DependentUpon>SessionExample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStateExample.aspx.cs">
+      <DependentUpon>ViewStateExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateExample.aspx.designer.cs">
+      <DependentUpon>ViewStateExample.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

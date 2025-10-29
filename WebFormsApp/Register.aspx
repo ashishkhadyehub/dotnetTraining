@@ -37,7 +37,7 @@
         </div>
 
 
-        <asp:Button runat="server"  OnClick="btnSubmit_Click" ID="btnSubmit" Text="Register Now" CssClass="btn btn-outline-success" />
+        <asp:Button runat="server" OnClientClick="return valid()"  OnClick="btnSubmit_Click" ID="btnSubmit" Text="Register Now" CssClass="btn btn-outline-success" />
 
 
     </div>

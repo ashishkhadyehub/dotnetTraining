@@ -78,7 +78,9 @@
     <Content Include="Session1.aspx" />
     <Content Include="Session2.aspx" />
     <Content Include="SessionExample.aspx" />
+    <Content Include="ShowDataFromDB.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="UploadImages.aspx" />
     <Content Include="ViewStateExample.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -147,6 +149,20 @@
     <Compile Include="SessionExample.aspx.designer.cs">
       <DependentUpon>SessionExample.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ShowDataFromDB.aspx.cs">
+      <DependentUpon>ShowDataFromDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowDataFromDB.aspx.designer.cs">
+      <DependentUpon>ShowDataFromDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadImages.aspx.cs">
+      <DependentUpon>UploadImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UploadImages.aspx.designer.cs">
+      <DependentUpon>UploadImages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +187,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Photos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

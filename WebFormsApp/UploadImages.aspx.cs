@@ -24,7 +24,7 @@ namespace WebFormsApp
             foreach (var file in fileUploadImage.PostedFiles)
             {
                 string extension = System.IO.Path.GetExtension(file.FileName);
-                Guid id = Guid.NewGuid(); 
+                Guid id = Guid.NewGuid(); //8999-hjhjh-hhjhj.jpg
                 string filename = id.ToString() + extension;
                 string imagePath = "Photos/" + filename;
                 file.SaveAs(Server.MapPath(imagePath));

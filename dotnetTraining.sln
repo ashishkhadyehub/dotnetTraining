@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp", "WebFormsApp\WebFormsApp.csproj", "{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcoreSessions", "dotnetcoreSessions\dotnetcoreSessions.csproj", "{DE296132-F745-4A13-9A39-F4F174A030C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{467E50D2-0E8A-4789-9DE5-D94EB6D85FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE296132-F745-4A13-9A39-F4F174A030C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE296132-F745-4A13-9A39-F4F174A030C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE296132-F745-4A13-9A39-F4F174A030C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE296132-F745-4A13-9A39-F4F174A030C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

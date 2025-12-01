@@ -1,7 +1,7 @@
-//DI container
 using dotnetcoreSessions.Data;
 using Microsoft.EntityFrameworkCore;
 
+//DI container
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

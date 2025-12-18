@@ -14,6 +14,7 @@ AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(builder.Configu
 builder.Services.AddScoped<IDeptRepo, DeptRepo>();
 builder.Services.AddScoped<IBranchRepo, BranchRepo>();
 builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
+builder.Services.AddScoped<IAdminRepo, AdminRepo>();
 
 //for checking login at views
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

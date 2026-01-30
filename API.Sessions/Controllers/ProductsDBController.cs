@@ -2,6 +2,7 @@
 using API.Sessions.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Sessions.Controllers
 {
@@ -17,44 +18,59 @@ namespace API.Sessions.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public async Task<IActionResult> Get()
         {
-           return _context.Products.ToList();
+            return Ok(await _context.Products.ToListAsync());
         }
 
         // GET api/<ProductDBController>/5
         [HttpGet("{id}")]
-        public Product Get(int id)
+        public async Task<IActionResult>Get(int id)
         {
-            return _context.Products.Find(id);
+            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
         }
 
         // POST api/<ProductDBController>
         [HttpPost]
-        public void Post([FromBody] Product product)
+        public async Task<IActionResult> Post([FromBody] Product product)
         {
-            _context.Products.Add(product);
-            _context.SaveChanges();
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
+            return StatusCode(StatusCodes.Status201Created);
         }
 
         // PUT api/<ProductDBController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Product product)
+        public async Task<IActionResult> Put(int id, [FromBody] Product product)
         {
-            var productinDB = _context.Products.Find(id);
-            productinDB.Name = product.Name;
-            productinDB.Price = product.Price;
-            _context.SaveChanges();
+            var p = await _context.Products.FirstOrDefaultAsync(x => x.Id == id);
+            if (p == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                p.Name = product.Name;
+                p.Price = product.Price;
+                await _context.SaveChangesAsync();
+                return Ok("Product details updated");
+            }
 
         }
 
         // DELETE api/<ProductDBController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var p = _context.Products.Find(id);
+            var p = await _context.Products.FindAsync(id);
             _context.Products.Remove(p);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+            return Ok("Product deleted");   
 
         }
     }
